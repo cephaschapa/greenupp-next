@@ -1,4 +1,5 @@
 import Head from 'next/head'
+import Footer from '../components/general/Footer'
 import Banner from '../components/landing/Banner'
 import MainCard from '../components/landing/MainCard'
 import Header from '../components/navigation/Header'
@@ -29,16 +30,14 @@ export default function Home() {
                 <MainCard image="/svg/message-3.svg" title="Decentralised & Encrypted Messaging"/>
             </div>
           </section>
-          <section className="h-auto bg-transparent">
-            <div className="">
-              <p className="text-center">Sign Up For early access</p>
-            </div>
-          </section>
       </main>
-
-      <footer>
-        
-      </footer>
+      <section className="h-auto bg-transparent relative">
+        <div className="absolute z-30 h-full w-full bg-black opacity-50"></div>
+         <div className="z-50 relative p-2 py-10 opacity-95 flex flex-col items-center justify-center space-y-6">
+            <p className="text-center text-white text-3xl">Sign Up for early access</p>
+            <button className="bg-transparent text-white border border-white p-4 w-36 rounded-full">Sign Up</button>         </div>
+      </section>
+      <Footer />
     </div>
   )
 }
