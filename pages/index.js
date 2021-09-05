@@ -15,7 +15,7 @@ export default function Home() {
       {/* Header */}
       <Header />
       <Banner />
-      <main className="bg-white p-2 py-10">
+      <main className="bg-white p-2 py-10" id="c">
           <section className="justify-center">
             <div className="flex flex-col items-center justify-center">
               <h1 className="text-gray-500 text-3xl text-center font-bold">Experience cutting edge technology at the edge</h1> 
@@ -33,8 +33,8 @@ export default function Home() {
       </main>
       <section className="h-auto bg-transparent relative">
         <div className="absolute z-30 h-full w-full bg-black opacity-50"></div>
-         <div className="z-50 relative p-2 py-10 opacity-95 flex flex-col items-center justify-center space-y-6">
-            <p className="text-center text-white text-3xl">Sign Up for early access</p>
+         <div className="z-40 relative p-2 py-10 opacity-95 flex flex-col items-center justify-center space-y-6">
+            <p className="text-center text-white text-3xl">Sign up for early access</p>
             <button className="bg-transparent text-white border border-white p-4 w-36 rounded-full">Sign Up</button>         </div>
       </section>
       <Footer />
