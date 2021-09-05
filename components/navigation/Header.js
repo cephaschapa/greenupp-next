@@ -35,7 +35,7 @@ function Header() {
         {
             drawer ? 
             
-            <div className="fixed h-full w-full bg-black z-50 p-2 flex flex-col opacity-80">
+            <div className="fixed h-full w-full bg-black z-50 p-2 flex flex-col opacity-90">
             {/* Header */}
                 <div className="flex justify-end pt-4">
                     <XIcon onClick={closeDrawer} className="h-10 -10 text-white"/>
@@ -55,7 +55,7 @@ function Header() {
                         <p className="text-white">Clients</p>
                         <div className="space-x-4">
                             <button className="rounded-full  w-24 font-bold p-4 bg-white text-black">Sign in</button>
-                            <button className="rounded-full  w-24 font-bold p-4 bg-white text-black ">Sign in</button>
+                            <button className="rounded-full  w-24 font-bold p-4 bg-white text-black ">Sign up</button>
                         </div>
                     </div>
                 </div>
