@@ -35,7 +35,7 @@ export default function Home() {
         <div className="absolute z-30 h-full w-full bg-black opacity-50"></div>
          <div className="z-40 relative p-2 py-10 opacity-95 flex flex-col items-center justify-center space-y-6">
             <p className="text-center text-white text-3xl">Sign up for early access</p>
-            <button className="bg-transparent text-white border border-white p-4 w-36 rounded-full">Sign Up</button>         </div>
+            <button className="bg-transparent text-white border-2 border-white p-4 w-36 rounded-full">Sign Up</button>         </div>
       </section>
       <Footer />
     </div>
