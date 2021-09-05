@@ -1,8 +1,9 @@
-import { QuestionMarkCircleIcon } from "@heroicons/react/outline"
+import {useRouter} from 'next/router'
 
-function MenuItems({icon, title}) {
+function MenuItems({icon, title, route}) {
+    const router = useRouter()
     return (
-            <div flex className="flex flex-col items-center justify-center border-2 font-bold border-white p-2 rounded-2xl text-gray-100 text-sm">
+            <div onClick={()=>{router.push(route)}} flex className="flex flex-col items-center justify-center border-2 font-bold border-white p-2 rounded-2xl text-gray-100 text-sm">
                 {icon}
                 <p className="">{title}</p>
             </div>

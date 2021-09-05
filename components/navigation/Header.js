@@ -3,6 +3,7 @@ import { AdjustmentsIcon, BadgeCheckIcon, BeakerIcon, MenuAlt4Icon, QuestionMark
 import {useState, useEffect} from 'react'
 import Acrylic from 'react-acrylic'
 import MenuItems from './MenuItems'
+import Link from 'next/link'
 function Header() {
     const [drawer, setOpenDrawer] = useState(false)
     const [opacity, setOpacity] = useState(false)
@@ -25,7 +26,7 @@ function Header() {
        <div className="">
             <header className={`${opacity ? 'opacity-90': 'bg-black'} bg-white flex z-50 h-20 w-full  shadow-md items-center p-3 justify-between fixed top-0`}>
             <div className="w-48 relative h-full">
-                <Image src="/logo.png" layout="fill"/>
+                <Link href="/"><Image src="/logo.png" layout="fill"/></Link>
             </div>
             <div className="">
                 <MenuAlt4Icon onClick={openDrawer} className="h-8 w-8 text-gray-500"/>
@@ -43,7 +44,7 @@ function Header() {
                 <div className="flex flex-col items-center mt-10 h-full">
                     <p className="text-white text-3xl p-4">MENU</p>
                     <div className="grid grid-cols-3 space-x-3">
-                        <MenuItems icon={<QuestionMarkCircleIcon className="h-10 w-10 text-center"/>} title="The Problem"/>
+                        <MenuItems icon={<QuestionMarkCircleIcon className="h-10 w-10 text-center"/>} title="The Problem" route="./theproblem"/>
                         <MenuItems icon={<BeakerIcon className="h-10 w-10 text-center"/>} title="The Solution"/>
                         <MenuItems icon={<BadgeCheckIcon className="h-10 w-10 text-center"/>} title="The Impact"/>
                     </div>
