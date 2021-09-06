@@ -37,6 +37,7 @@ export default function Home() {
             <p className="text-center text-white text-3xl">Sign up for early access</p>
             <button className="bg-transparent text-white border-2 border-white p-4 w-36 rounded-full">Sign Up</button>         </div>
       </section>
+      
       <Footer />
     </div>
   )
