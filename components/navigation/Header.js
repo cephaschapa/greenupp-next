@@ -34,9 +34,9 @@ function Header() {
             </div>
         
         </header>      
-            <div className={`${drawer? 'inline h-screen': 'hidden'} fixed top-0 transition transform duration-150 text-gray-600 w-full bg-white z-50 p-2 flex flex-col`}>
+            <div className={`${drawer? 'right-0 h-screen transition duration-200 ease-linear': '-right-full transform duration-500 ease-linear'} fixed transform duration-300 w-full h-screen top-0 text-gray-600 bg-white z-50 p-2 flex flex-col`}>
             {/* Header */}
-                <div className="flex justify-between pt-4">
+                <div className="flex justify-between pt-2 px-1">
                     <TranslateIcon onClick={closeDrawer} className="h-12 bg-gray-200 p-2 text-gray-600 rounded-full"/>
                     <XIcon onClick={closeDrawer} className="h-12 bg-gray-200 p-2 text-gray-600 rounded-full"/>
                 </div>
