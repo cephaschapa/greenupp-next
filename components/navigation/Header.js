@@ -59,7 +59,7 @@ function Header() {
                         <p className="font-bold">Careers</p>
                         <div className="divider bg-gray-200 w-1/2 h-0.5"></div>
                         <p className="font-bold">Support</p>
-                        <div className="w-full space-x-4 flex justify-around items-end bottom-8 absolute p-3">
+                        <div className="w-full space-x-4 flex justify-around items-end bottom-16 absolute p-3">
                             <button className="rounded-full shadow-md border border-gray-200 flex-grow font-bold p-4 bg-white text-black">Sign in</button>
                             <button className="rounded-full  flex-grow font-bold shadow-md border border-gray-200 p-4 bg-white text-black ">Sign up</button>
                         </div>
