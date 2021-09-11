@@ -1,5 +1,5 @@
 import Image from 'next/image'
-import { AdjustmentsIcon, BadgeCheckIcon, BeakerIcon, MenuAlt4Icon, QuestionMarkCircleIcon, TrendingUpIcon, XIcon } from '@heroicons/react/solid'
+import { AdjustmentsIcon, BadgeCheckIcon, BeakerIcon, MenuAlt4Icon, QuestionMarkCircleIcon, TrendingUpIcon, UserIcon, XIcon } from '@heroicons/react/solid'
 import {useState, useEffect} from 'react'
 import Acrylic from 'react-acrylic'
 import MenuItems from './MenuItems'
@@ -25,11 +25,26 @@ function Header() {
     }
     return (
        <div className="">
-            <header className={`${opacity ? 'opacity-90': 'bg-black'} bg-white flex z-50 h-20 w-full  shadow-md items-center p-3 justify-between fixed top-0`}>
+            <header className={`${opacity ? 'opacity-90': 'bg-black'} bg-white flex z-50 h-20 w-full  shadow-md items-center p-3 justify-between fixed top-0 lg:px-52`}>
             <div className="w-48 relative h-full">
                 <Link href="/"><Image src="/logo.png" layout="fill"/></Link>
             </div>
-            <div className="bg-gray-200 p-2 rounded-full" onClick={openDrawer}>
+            {/* Nav Menu Main*/}
+            <div className="hidden lg:inline-flex space-x-2">
+                    <ul className="flex space-x-5 font-bold">
+                        <Link href="/"><li className="cursor-pointer hover:bg-gray-300 p-2 px-4 rounded-full">Home</li></Link>
+                        <Link href="/app"><li className="cursor-pointer hover:bg-gray-300 p-2 px-4 rounded-full">App</li></Link>
+                        <Link href="/services"><li className="cursor-pointer hover:bg-gray-300 p-2 px-4 rounded-full">Services</li></Link>
+                        <Link href="/"><li className="cursor-pointer hover:bg-gray-300 p-2 px-4 rounded-full">News & Blogs</li></Link>
+                        <Link href="/about"><li className="cursor-pointer hover:bg-gray-300 p-2 px-4 rounded-full">About</li></Link>
+                        <Link href="/research"><li className="cursor-pointer hover:bg-gray-300 p-2 px-4 rounded-full">Research and Findings</li></Link>
+                        <Link href="/support"><li className="cursor-pointer hover:bg-gray-300 p-2 px-4 rounded-full">Support</li></Link>
+                    </ul>
+                
+                    <TranslateIcon className="h-10 bg-gray-200 p-2 text-gray-600 rounded-full"/>
+                    <UserIcon  className="h-10 bg-gray-200 p-2 text-gray-600 rounded-full"/>
+                </div>
+            <div className="bg-gray-200 p-2 rounded-full lg:hidden" onClick={openDrawer}>
                 <MenuAlt3Icon className="h-8 w-8 text-gray-500"/>
             </div>
         
@@ -40,6 +55,8 @@ function Header() {
                     <TranslateIcon onClick={closeDrawer} className="h-12 bg-gray-200 p-2 text-gray-600 rounded-full"/>
                     <XIcon onClick={closeDrawer} className="h-12 bg-gray-200 p-2 text-gray-600 rounded-full"/>
                 </div>
+                
+                {/* Nav Menu Drawer menu */}
                 <div className="flex flex-col items-center mt-5 h-full">
                     <p className="text-3xl font-bold p-4">MENU</p>
                     {/* <div className="grid grid-cols-3 space-x-3">
