@@ -113,7 +113,7 @@ function Footer() {
                
            </div>
 
-           <div className="flex space-x-3  items-center font-bold justify-center pt-4 lg:p-2 w-full lg:justify-end lg:px-52 bg-gray-200">
+           <div className="flex space-x-3  items-center font-bold justify-center pt-0 py-5 -mt-1 lg:p-2 w-full lg:justify-end lg:px-52 bg-gray-200">
                    <GlobeAltIcon className="h-4 w-4"/> 
                 <p>En</p>
                 <p>|</p>
