@@ -1,10 +1,10 @@
 import Image from 'next/image'
-import { AdjustmentsIcon, BadgeCheckIcon, BeakerIcon, MenuAlt4Icon, QuestionMarkCircleIcon, TrendingUpIcon, UserIcon, XIcon } from '@heroicons/react/solid'
+import { AdjustmentsIcon, BadgeCheckIcon, BeakerIcon, MenuAlt4Icon, QuestionMarkCircleIcon, TrendingUpIcon, UserIcon, ViewListIcon, XIcon } from '@heroicons/react/solid'
 import {useState, useEffect} from 'react'
 import Acrylic from 'react-acrylic'
 import MenuItems from './MenuItems'
 import Link from 'next/link'
-import { MenuAlt3Icon, TranslateIcon } from '@heroicons/react/outline'
+import { ChatAltIcon, CubeTransparentIcon, DatabaseIcon, DesktopComputerIcon, DeviceMobileIcon, LocationMarkerIcon, MenuAlt3Icon, ShoppingBagIcon, SunIcon, TranslateIcon, TruckIcon } from '@heroicons/react/outline'
 function Header() {
     const [drawer, setOpenDrawer] = useState(false)
     const [opacity, setOpacity] = useState(false)
@@ -33,8 +33,84 @@ function Header() {
             <div className="hidden lg:inline-flex space-x-2">
                     <ul className="flex space-x-5 font-bold">
                         <Link href="/"><li className="cursor-pointer hover:bg-gray-300 p-2 px-4 rounded-full">Home</li></Link>
-                        <Link href="/app"><li className="cursor-pointer hover:bg-gray-300 p-2 px-4 rounded-full">App</li></Link>
-                        <Link href="/services"><li className="cursor-pointer hover:bg-gray-300 p-2 px-4 rounded-full">Services</li></Link>
+                        
+                            <div className="relative group">
+                                <button className="cursor-pointer font-bold hover:bg-gray-300 p-2 px-4 rounded-full">App</button>
+                                <div className="absolute space-x-3 z-50 hidden group-hover:grid grid-cols-3 h-56 w-72 bg-gray-100 p-2 rounded-2xl shadow-md items-center justify-center">
+                                    <Link href="/app">
+                                        <div className="flex flex-col items-center justify-center cursor-pointer transition duration-150 rounded-2xl hover:bg-gray-200 p-2">
+                                            <DeviceMobileIcon className="text-gray-400 h-16 w-16"/>
+                                            <p className="text-center text-gray-500">Mobile</p>
+                                        </div>
+                                    </Link>
+                                    <Link href="/app">
+                                        <div className="flex flex-col items-center justify-center cursor-pointer transition duration-150 rounded-2xl hover:bg-gray-200 p-2">
+                                            <DesktopComputerIcon className="text-gray-400 h-16 w-16"/>
+                                            <p className="text-center text-gray-500">Web</p>
+                                        </div>
+                                    </Link>
+                                    <Link href="/app">
+                                        <div className="flex flex-col items-center justify-center cursor-pointer transition duration-150 rounded-2xl hover:bg-gray-200 p-2">
+                                            <ViewListIcon className="text-gray-400 h-16 w-16"/>
+                                            <p className="text-center text-gray-500">USSD</p>
+                                        </div>
+                                    </Link>
+                                </div>
+                            </div>
+                        
+                            <div className="relative group">
+                                <button className="cursor-pointer font-bold hover:bg-gray-300 p-2 px-4 rounded-full">Services</button>
+                                <div className="absolute z-50 hidden group-hover:grid grid-cols-1 h-auto w-96  bg-gray-100 p-2 rounded-2xl shadow-md items-center justify-center">
+                                    <Link href="/app">
+                                        <div className="flex space-x-2 justify-start items-center cursor-pointer transition duration-150 rounded-2xl hover:bg-gray-200 p-2">
+                                            <DatabaseIcon className="text-gray-400 h-10 w-10"/>
+                                            <p className="text-gray-500">Greenupp IoT Data Capture</p>
+                                        </div>
+                                    </Link>
+                                    <Link href="/app">
+                                        <div className="flex space-x-2 justify-start items-center cursor-pointer transition duration-150 rounded-2xl hover:bg-gray-200 p-2">
+                                            <TruckIcon className="text-gray-400 h-10 w-10"/>
+                                            <p className="text-gray-500">Greenupp Blockchain and Supply Chain</p>
+                                        </div>
+                                    </Link>
+                                    <Link href="/app">
+                                        <div className="flex space-x-2 justify-start items-center cursor-pointer transition duration-150 rounded-2xl hover:bg-gray-200 p-2">
+                                            <DatabaseIcon className="text-gray-400 h-10 w-10"/>
+                                            <p className="text-gray-500">Greenupp IoT Data Capture</p>
+                                        </div>
+                                    </Link>
+                                    <Link href="/app">
+                                        <div className="flex space-x-2 justify-start items-center cursor-pointer transition duration-150 rounded-2xl hover:bg-gray-200 p-2">
+                                            <CubeTransparentIcon className="text-gray-400 h-10 w-10"/>
+                                            <p className="text-gray-500">Greenupp Crop Disease Diagnose</p>
+                                        </div>
+                                    </Link>
+                                    <Link href="/app">
+                                        <div className="flex space-x-2 justify-start items-center cursor-pointer transition duration-150 rounded-2xl hover:bg-gray-200 p-2">
+                                            <LocationMarkerIcon className="text-gray-400 h-10 w-10"/>
+                                            <p className="text-gray-500">Greenupp GPS & Mapping</p>
+                                        </div>
+                                    </Link>
+                                    <Link href="/app">
+                                        <div className="flex space-x-2 justify-start items-center cursor-pointer transition duration-150 rounded-2xl hover:bg-gray-200 p-2">
+                                            <SunIcon className="text-gray-400 h-10 w-10"/>
+                                            <p className="text-gray-500">Greenupp Weather</p>
+                                        </div>
+                                    </Link>
+                                    <Link href="/app">
+                                        <div className="flex space-x-2 justify-start items-center cursor-pointer transition duration-150 rounded-2xl hover:bg-gray-200 p-2">
+                                            <ChatAltIcon className="text-gray-400 h-10 w-10"/>
+                                            <p className="text-gray-500">Greenupp Social</p>
+                                        </div>
+                                    </Link>
+                                    <Link href="/app">
+                                        <div className="flex space-x-2 justify-start items-center cursor-pointer transition duration-150 rounded-2xl hover:bg-gray-200 p-2">
+                                            <ShoppingBagIcon className="text-gray-400 h-10 w-10"/>
+                                            <p className="text-gray-500">Greenupp Store</p>
+                                        </div>
+                                    </Link>
+                                </div>
+                            </div>
                         <Link href="/"><li className="cursor-pointer hover:bg-gray-300 p-2 px-4 rounded-full">News & Blogs</li></Link>
                         <Link href="/about"><li className="cursor-pointer hover:bg-gray-300 p-2 px-4 rounded-full">About</li></Link>
                         <Link href="/research"><li className="cursor-pointer hover:bg-gray-300 p-2 px-4 rounded-full">Research and Findings</li></Link>

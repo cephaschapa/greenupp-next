@@ -13,7 +13,7 @@ function Footer() {
             console.log("Country is : ", response);
             setCountry(response.country)
         })
-    })
+    },[])
 
     // collapse handler
     const collapseHandler = () => {
