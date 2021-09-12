@@ -30,7 +30,7 @@ function Header() {
                 <Link href="/"><Image src="/logo.png" layout="fill"/></Link>
             </div>
             {/* Nav Menu Main*/}
-            <div className="hidden lg:inline-flex space-x-2">
+            <div className="hidden lg:inline-flex space-x-1">
                     <ul className="flex space-x-5 font-bold">
                         <Link href="/"><li className="cursor-pointer hover:bg-gray-300 p-2 px-4 rounded-full">Home</li></Link>
                         
@@ -111,9 +111,9 @@ function Header() {
                                     </Link>
                                 </div>
                             </div>
-                        <Link href="/"><li className="cursor-pointer hover:bg-gray-300 p-2 px-4 rounded-full">News & Blogs</li></Link>
+                        <Link href="/"><li className="cursor-pointer hover:bg-gray-300 p-2 px-4 rounded-full">News</li></Link>
                         <Link href="/about"><li className="cursor-pointer hover:bg-gray-300 p-2 px-4 rounded-full">About</li></Link>
-                        <Link href="/research"><li className="cursor-pointer hover:bg-gray-300 p-2 px-4 rounded-full">Research and Findings</li></Link>
+                        <Link href="/research"><li className="cursor-pointer hover:bg-gray-300 p-2 px-4 rounded-full">Research</li></Link>
                         <Link href="/support"><li className="cursor-pointer hover:bg-gray-300 p-2 px-4 rounded-full">Support</li></Link>
                     </ul>
                 
