@@ -58,7 +58,7 @@ function Footer() {
                     }} className="font-bold flex items-center w-full justify-between py-2"><p>Services</p> <span className={`${collapse==2? 'transition duration-150 rotate-45 bg-gray-500 text-white p-2 rounded-full': 'transition duration-150 -rotate-45'} md:hidden`}><PlusIcon className="h-4 w-4 transition duration-150"/></span></div>
                     <div className={`${collapse==2? 'inline transition duration-150':'hidden transition duration-150'} w-full md:inline`}>
                         <ul className="space-y-3 px-2 md:px-0">
-                            <li>Greenupp IoT Data Capture</li>
+                            <li>Greenupp SmartNodes</li>
                             <li>Greenupp Blockchain and Supply Chain</li>
                             <li>Greenupp Crop Disease Diagnose</li>
                             <li>Greenupp GPS & Mapping</li>
