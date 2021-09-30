@@ -8,7 +8,9 @@ function Banner() {
             <div className="absolute z-40 flex flex-col items-center justify-center h-full w-full p-2 space-y-10">
                 <p className="font-bold text-4xl text-center text-white lg:text-7xl">Software for the open environment</p>
                 <p className="text-lg text-center text-gray-200 lg:text-3xl">Powered by artificial intelligence, driven by values</p>
-                <button className="bg-transparent text-white border-2 border-white p-4 w-36 rounded-full">Get Started</button>
+                <Link href="/getstarted">
+                    <button className="bg-transparent text-white border-2 border-white p-4 w-36 rounded-full">Get Started</button>
+                </Link>
                 <Link href="#c">
                     <ChevronDoubleDownIcon className="h-10 w-10 animate-bounce relative top-28 text-white"/>
                 </Link>

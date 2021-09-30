@@ -1,5 +1,5 @@
 import Image from 'next/image'
-import { AdjustmentsIcon, BadgeCheckIcon, BeakerIcon, MenuAlt4Icon, QuestionMarkCircleIcon, TrendingUpIcon, UserIcon, ViewListIcon, XIcon } from '@heroicons/react/solid'
+import { AdjustmentsIcon, BadgeCheckIcon, BeakerIcon, LoginIcon, MenuAlt4Icon, PlusIcon, QuestionMarkCircleIcon, TrendingUpIcon, UserAddIcon, UserIcon, ViewListIcon, XIcon } from '@heroicons/react/solid'
 import {useState, useEffect} from 'react'
 import Acrylic from 'react-acrylic'
 import MenuItems from './MenuItems'
@@ -10,7 +10,7 @@ function Header() {
     const [opacity, setOpacity] = useState(false)
     useEffect(() => {
         window.addEventListener('scroll', function(){
-            setOpacity(true)
+            setOpacity(false)
             // console.log(opacity)
         })
     }, [])
@@ -25,13 +25,13 @@ function Header() {
     }
     return (
        <div className="">
-            <header className={`${opacity ? 'opacity-90': 'bg-black'} bg-white flex z-50 h-20 w-full  shadow-md items-center p-3 justify-between fixed top-0 lg:px-52`}>
+            <header className={`${opacity ? 'opacity-90': 'bg-black'} bg-white flex z-50 h-20 w-full  shadow-md items-center p-3 justify-between fixed top-0 lg:px-52 signup-clipped__div  backdrop-filter backdrop-blur-lg bg-opacity-70`}>
             <div className="w-48 relative h-full">
                 <Link href="/"><Image src="/logo.png" layout="fill"/></Link>
             </div>
             {/* Nav Menu Main*/}
             <div className="hidden lg:inline-flex space-x-1">
-                    <ul className="flex space-x-5 font-bold">
+                    <ul className="flex space-x-5 font-bold items-center">
                         <Link href="/"><li className="cursor-pointer hover:bg-gray-300 p-2 px-4 rounded-full">Home</li></Link>
                         
                             <div className="relative group">
@@ -73,12 +73,7 @@ function Header() {
                                             <p className="text-gray-500">Greenupp Blockchain and Supply Chain</p>
                                         </div>
                                     </Link>
-                                    <Link href="/app">
-                                        <div className="flex space-x-2 justify-start items-center cursor-pointer transition duration-150 rounded-2xl hover:bg-gray-200 p-2">
-                                            <DatabaseIcon className="text-gray-400 h-10 w-10"/>
-                                            <p className="text-gray-500">Greenupp IoT Data Capture</p>
-                                        </div>
-                                    </Link>
+                                    
                                     <Link href="/app">
                                         <div className="flex space-x-2 justify-start items-center cursor-pointer transition duration-150 rounded-2xl hover:bg-gray-200 p-2">
                                             <CubeTransparentIcon className="text-gray-400 h-10 w-10"/>
@@ -117,8 +112,62 @@ function Header() {
                         <Link href="/support"><li className="cursor-pointer hover:bg-gray-300 p-2 px-4 rounded-full">Support</li></Link>
                     </ul>
                 
-                    <TranslateIcon className="h-10 bg-gray-200 p-2 text-gray-600 rounded-full"/>
-                    <UserIcon  className="h-10 bg-gray-200 p-2 text-gray-600 rounded-full"/>
+                    
+                    <div className="relative group">
+                        <button className="flex border-2 border-gray-300 items-center space-x-1 cursor-pointer font-bold hover:bg-gray-300 p-2 px-4 rounded-full"><TranslateIcon  className="h-10 bg-gray-200 p-2 text-gray-600 rounded-full"/><span>En (UK)</span></button>
+                        <div className="absolute z-50 hidden group-hover:grid grid-cols-1 h-auto w-52 bg-gray-100 p-2 rounded-2xl shadow-md">
+                            <Link href="/app">
+                                <div className="flex items-center cursor-pointer font-bold space-x-1 transition duration-150 rounded-2xl hover:bg-gray-200 p-2">
+                                    {/* <UserIcon className="text-gray-400 h-8 w-8"/> */}
+                                    <p className="text-center text-gray-500">English (Uk)</p>
+                                </div>
+                            </Link>
+                            <Link href="/app">
+                                <div className="flex items-center cursor-pointer font-bold transition space-x-1 duration-150 rounded-2xl hover:bg-gray-200 p-2">
+                                    {/* <UserAddIcon className="text-gray-400 h-8 w-8"/> */}
+                                    <p className="text-center text-gray-500">French (Fr)</p>
+                                </div>
+                            </Link>
+                            <Link href="/app">
+                                <div className="flex items-center cursor-pointer font-bold transition space-x-1 duration-150 rounded-2xl hover:bg-gray-200 p-2">
+                                    {/* <UserAddIcon className="text-gray-400 h-8 w-8"/> */}
+                                    <p className="text-center text-gray-500">Chinese (Ch)</p>
+                                </div>
+                            </Link>
+                            <Link href="/app">
+                                <div className="flex items-center cursor-pointer font-bold transition space-x-1 duration-150 rounded-2xl hover:bg-gray-200 p-2">
+                                    {/* <UserAddIcon className="text-gray-400 h-8 w-8"/> */}
+                                    <p className="text-center text-gray-500">Español (Es)</p>
+                                </div>
+                            </Link>
+                            <Link href="/app">
+                                <div className="flex items-center cursor-pointer font-bold transition space-x-1 duration-150 rounded-2xl hover:bg-gray-200 p-2">
+                                    {/* <UserAddIcon className="text-gray-400 h-8 w-8"/> */}
+                                    <p className="text-center text-gray-500">Bemba (Be)</p>
+                                </div>
+                            </Link>
+                           
+                        </div>
+                    </div>
+                    <div className="relative group">
+                        <button className="flex border-2 border-gray-300 items-center space-x-1 cursor-pointer font-bold hover:bg-gray-300 p-2 px-4 rounded-full"><UserIcon  className="h-10 bg-gray-200 p-2 text-gray-600 rounded-full"/><span>Account</span></button>
+                        <div className="absolute z-50 hidden group-hover:grid grid-cols-1 h-30 w-52 bg-gray-100 p-2 rounded-2xl shadow-md">
+                            <Link href="/app">
+                                <div className="flex items-center cursor-pointer font-bold space-x-1 transition duration-150 rounded-2xl hover:bg-gray-200 p-2">
+                                    {/* <UserIcon className="text-gray-400 h-8 w-8"/> */}
+                                    <p className="text-center text-gray-500">Sign In</p>
+                                </div>
+                            </Link>
+                            <Link href="/app">
+                                <div className="flex items-center cursor-pointer font-bold transition space-x-1 duration-150 rounded-2xl hover:bg-gray-200 p-2">
+                                    {/* <UserAddIcon className="text-gray-400 h-8 w-8"/> */}
+                                    <p className="text-center text-gray-500">Register</p>
+                                </div>
+                            </Link>
+                           
+                        </div>
+                    </div>
+                    
                 </div>
             <div className="bg-gray-200 p-2 rounded-full lg:hidden" onClick={openDrawer}>
                 <MenuAlt3Icon className="h-8 w-8 text-gray-500"/>

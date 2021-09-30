@@ -18,3 +18,15 @@ html {
 .btn{
   background-color: #16a085;
 }
+
+.get-started__div{
+  /* clip-path: polygon(0 8%, 100% 0, 100% 100%, 0% 100%); */
+  
+  backdrop-filter: blur(50px);
+  /* filter: blur(100px) */
+}
+
+.main-wrapper{
+  background:url("/wrapper-image.jpg") no-repeat center;
+  background-size: cover;
+}
