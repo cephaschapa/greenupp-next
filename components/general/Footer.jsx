@@ -122,11 +122,11 @@ function Footer() {
            
            <div className="flex py-5 space-x-2 bg-gray-800 text-gray-200 justify-center">
                 <p>Greenupp &copy; {date}</p>
-                <p>|</p>
+                {/* <p>|</p> */}
                 <p>Contact</p>
-                <p>|</p>
+                {/* <p>|</p> */}
                 <p>News</p>
-                <p>|</p>
+                {/* <p>|</p> */}
                 <p>Careers</p>
            </div>
         </footer>
