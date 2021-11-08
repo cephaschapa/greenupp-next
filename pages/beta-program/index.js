@@ -59,9 +59,9 @@ const Index = () => {
         }
         try {
             await navigator.share(shareData)
-            alert("Thank you for sharing")
+            // alert("Thank you for sharing")
         } catch (error) {
-            alert(error.message)
+            // alert(error.message)
         }
 
     }
@@ -102,7 +102,7 @@ const Index = () => {
                 <link rel="icon" href="/favicon.ico" />
             </Head>
             <section className="h-screen w-full flex justify-center">
-                <ArrowLeftIcon onClick={()=>router.push('/')} className="h-12 w-12 fixed top-10 border-2 left-4 md:left-20 border-gray-400 p-2 rounded-full"/>
+                <ArrowLeftIcon onClick={()=>router.push('/')} className="h-12 w-12 fixed top-10 border-2 left-4 md:left-20 border-gray-400 p-2 bg-white rounded-full"/>
                 <div className="flex flex-col justify-center items-center w-full md:w-1/2 lg:w-1/3 space-y-3">
                     <h1 className="text-3xl text-green-600">Greenupp Technologies</h1>
                     <p className="text-xl font-bold text-gray-500">βeta Program</p>
