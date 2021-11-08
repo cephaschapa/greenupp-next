@@ -4,8 +4,10 @@ import Footer from '../components/general/Footer'
 import Banner from '../components/landing/Banner'
 import MainCard from '../components/landing/MainCard'
 import Header from '../components/navigation/Header'
+import {useRouter} from 'next/router'
 
 export default function Home() {
+  const router = useRouter()
   return (
     <div>
       <Head>
@@ -36,7 +38,7 @@ export default function Home() {
         <div className="absolute z-30 h-full w-full bg-black  backdrop-filter backdrop-blur-lg bg-opacity-50"></div>
          <div className="z-40 relative p-2 py-20 opacity-95 flex flex-col items-center justify-center space-y-6">
             <p className="text-center text-white text-3xl">Register For Early Access</p>
-            <button className="bg-transparent text-white border-2 border-white p-4 w-36 rounded-full">SIGN UP</button>         </div>
+            <button onClick={()=>router.push('/beta-program')} className="bg-transparent text-white border-2 border-white p-4 w-36 rounded-full">SIGN UP</button>         </div>
       </section>
       <section className="h-auto bg-white relative text-gray-500">
         

@@ -11,6 +11,7 @@
   "dependencies": {
     "@heroicons/react": "^1.0.4",
     "acrylic": "^1.0.0",
+    "axios": "^0.24.0",
     "next": "11.1.2",
     "react": "17.0.2",
     "react-acrylic": "^0.1.1",
