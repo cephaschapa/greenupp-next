@@ -152,7 +152,7 @@ const Index = () => {
                                 <div className="bg-white p-2 h-3 w-3 animate-spin rounded"></div>
                                 <div className="bg-white p-2 h-3 w-3 animate-spin rounded"></div>
                                 <div className="bg-white p-2 h-3 w-3 animate-spin rounded"></div>
-                            </div></>: 'Sign in'}
+                            </div></>: 'Join'}
                             </button>
                             {
                                 res? <p className="py-3 text-center text-green-600 font-bold uppercase">Thank you {resName}😁</p>:null
