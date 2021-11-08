@@ -23,7 +23,7 @@ const Index = () => {
         
         e.preventDefault()
         setIsSubmit(true)
-        axios.post('http://localhost:5000/api/v1/betas', {
+        axios.post('https://greenupp-master.herokuapp.com/api/v1/betas', {
             "fname": fname,
             "lname": lname,
             "email": email,
