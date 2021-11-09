@@ -37,7 +37,7 @@ export default function Home() {
       <section className="h-80 bg-transparent relative">
         <div className="absolute z-30 h-full w-full bg-black  backdrop-filter backdrop-blur-lg bg-opacity-50"></div>
          <div className="z-40 relative p-2 py-20 opacity-95 flex flex-col items-center justify-center space-y-6">
-            <p className="text-center text-white text-3xl">Register For Early Access</p>
+            <p className="text-center text-white text-xl lg:text-3xl">Register For Early Access</p>
             <button onClick={()=>router.push('/beta-program')} className="bg-transparent text-white border-2 border-white p-4 w-36 rounded-full">SIGN UP</button>         </div>
       </section>
       <section className="h-auto bg-white relative text-gray-500">
