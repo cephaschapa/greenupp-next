@@ -39,17 +39,7 @@ export default function Home() {
          <div className="z-40 relative p-2 py-20 opacity-95 flex flex-col items-center justify-center space-y-6">
             <p className="text-center text-white text-xl lg:text-3xl">Register For Early Access</p>
             <button onClick={()=>router.push('/beta-program')} className="bg-transparent text-white border-2 border-white p-4 w-36 rounded-full">SIGN UP</button>         </div>
-      </section>
-      <section className="h-auto bg-white relative text-gray-500">
-        
-         <div className="z-40 relative p-2 py-10 opacity-95 flex flex-col items-center justify-center space-y-6">
-            <div className=""><Image src="/wp.png" height={200} width={130} alt="greenupp-whitepaper"/></div>
-            <div className="flex flex-col items-center w-full space-y-4">
-              <p className="text-center">Our whitepaper on sustainable agriculture and supply chain.</p>
-              <button className="bg-transparent border-2 border-gray-500 p-4 w-36 rounded-full">DOWNLOAD</button></div>
-            </div> 
-      </section>
-      
+      </section>      
       <Footer />
     </div>
   )
