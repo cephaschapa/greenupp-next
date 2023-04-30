@@ -18,7 +18,7 @@ function Banner() {
           </button>
         </Link>
         <Link href="#c">
-          <ChevronDoubleDownIcon className="h-10 w-10 animate-bounce relative top-28 text-white" />
+          <ChevronDoubleDownIcon className="h-10 w-10 animate-bounce relative top-28 text-white cursor-pointer" />
         </Link>
       </div>
       <video
