@@ -33,7 +33,6 @@ function Header() {
             <div className="hidden lg:inline-flex space-x-1">
                     <ul className="flex space-x-5 font-bold items-center">
                         <Link href="/"><li className="cursor-pointer hover:bg-gray-300 p-2 px-4 rounded-full">Home</li></Link>
-                        
                             <div className="relative group">
                                 <button className="cursor-pointer font-bold hover:bg-gray-300 p-2 px-4 rounded-full">App</button>
                                 <div className="absolute space-x-3 z-50 hidden group-hover:grid grid-cols-3 h-56 w-72 bg-gray-100 p-2 rounded-2xl shadow-md items-center justify-center">
@@ -106,68 +105,11 @@ function Header() {
                                     </Link>
                                 </div>
                             </div>
-                        <Link href="/"><li className="cursor-pointer hover:bg-gray-300 p-2 px-4 rounded-full">News</li></Link>
+                        <Link href="/"><li className="cursor-pointer hover:bg-gray-300 p-2 px-4 rounded-full">Blog</li></Link>
                         <Link href="/about"><li className="cursor-pointer hover:bg-gray-300 p-2 px-4 rounded-full">About</li></Link>
                         <Link href="/research"><li className="cursor-pointer hover:bg-gray-300 p-2 px-4 rounded-full">Research</li></Link>
                         <Link href="/support"><li className="cursor-pointer hover:bg-gray-300 p-2 px-4 rounded-full">Support</li></Link>
-                    </ul>
-                
-                    
-                    <div className="relative group">
-                        <button className="flex border-2 border-gray-300 items-center space-x-1 cursor-pointer font-bold hover:bg-gray-300 p-2 px-4 rounded-full"><TranslateIcon  className="h-10 bg-gray-200 p-2 text-gray-600 rounded-full"/><span>En (UK)</span></button>
-                        <div className="absolute z-50 hidden group-hover:grid grid-cols-1 h-auto w-52 bg-gray-100 p-2 rounded-2xl shadow-md">
-                            <Link href="/app">
-                                <div className="flex items-center cursor-pointer font-bold space-x-1 transition duration-150 rounded-2xl hover:bg-gray-200 p-2">
-                                    {/* <UserIcon className="text-gray-400 h-8 w-8"/> */}
-                                    <p className="text-center text-gray-500">English (Uk)</p>
-                                </div>
-                            </Link>
-                            <Link href="/app">
-                                <div className="flex items-center cursor-pointer font-bold transition space-x-1 duration-150 rounded-2xl hover:bg-gray-200 p-2">
-                                    {/* <UserAddIcon className="text-gray-400 h-8 w-8"/> */}
-                                    <p className="text-center text-gray-500">French (Fr)</p>
-                                </div>
-                            </Link>
-                            <Link href="/app">
-                                <div className="flex items-center cursor-pointer font-bold transition space-x-1 duration-150 rounded-2xl hover:bg-gray-200 p-2">
-                                    {/* <UserAddIcon className="text-gray-400 h-8 w-8"/> */}
-                                    <p className="text-center text-gray-500">Chinese (Ch)</p>
-                                </div>
-                            </Link>
-                            <Link href="/app">
-                                <div className="flex items-center cursor-pointer font-bold transition space-x-1 duration-150 rounded-2xl hover:bg-gray-200 p-2">
-                                    {/* <UserAddIcon className="text-gray-400 h-8 w-8"/> */}
-                                    <p className="text-center text-gray-500">Español (Es)</p>
-                                </div>
-                            </Link>
-                            <Link href="/app">
-                                <div className="flex items-center cursor-pointer font-bold transition space-x-1 duration-150 rounded-2xl hover:bg-gray-200 p-2">
-                                    {/* <UserAddIcon className="text-gray-400 h-8 w-8"/> */}
-                                    <p className="text-center text-gray-500">Bemba (Be)</p>
-                                </div>
-                            </Link>
-                           
-                        </div>
-                    </div>
-                    <div className="relative group">
-                        <button className="flex border-2 border-gray-300 items-center space-x-1 cursor-pointer font-bold hover:bg-gray-300 p-2 px-4 rounded-full"><UserIcon  className="h-10 bg-gray-200 p-2 text-gray-600 rounded-full"/><span>Account</span></button>
-                        <div className="absolute z-50 hidden group-hover:grid grid-cols-1 h-30 w-52 bg-gray-100 p-2 rounded-2xl shadow-md">
-                            <Link href="/app">
-                                <div className="flex items-center cursor-pointer font-bold space-x-1 transition duration-150 rounded-2xl hover:bg-gray-200 p-2">
-                                    {/* <UserIcon className="text-gray-400 h-8 w-8"/> */}
-                                    <p className="text-center text-gray-500">Sign In</p>
-                                </div>
-                            </Link>
-                            <Link href="/app">
-                                <div className="flex items-center cursor-pointer font-bold transition space-x-1 duration-150 rounded-2xl hover:bg-gray-200 p-2">
-                                    {/* <UserAddIcon className="text-gray-400 h-8 w-8"/> */}
-                                    <p className="text-center text-gray-500">Register</p>
-                                </div>
-                            </Link>
-                           
-                        </div>
-                    </div>
-                    
+                    </ul>                    
                 </div>
             <div className="bg-gray-200 p-2 rounded-full lg:hidden" onClick={openDrawer}>
                 <MenuAlt3Icon className="h-8 w-8 text-gray-500"/>
@@ -197,14 +139,7 @@ function Header() {
                         <p className="font-bold">News</p>
                         <div className="divider bg-gray-200 w-1/2 h-0.5"></div>
                         <p className="font-bold">About</p>
-                        <div className="divider bg-gray-200 w-1/2 h-0.5"></div>
-                        <p className="font-bold">Careers</p>
-                        <div className="divider bg-gray-200 w-1/2 h-0.5"></div>
-                        <p className="font-bold">Support</p>
-                        <div className="w-full space-x-4 flex justify-around items-end bottom-16 absolute p-3">
-                            <button className="rounded-full shadow-md border border-gray-200 flex-grow font-bold p-4 bg-white text-black">Sign in</button>
-                            <button className="rounded-full  flex-grow font-bold shadow-md border border-gray-200 p-4 bg-white text-black ">Sign up</button>
-                        </div>
+                    
                     </div>
                 </div>
             {/* Body */}
