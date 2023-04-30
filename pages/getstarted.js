@@ -56,12 +56,10 @@ const getstarted = () => {
                                     <p className="">Market Place</p>
                                 </div>
                                 <button className="w-full text-black border-2 p-3 bg-white rounded-full font-bold">PROCEED</button>
-                                
                             </div>
                             <div className="grid grid-cols-1 space-y-2 w-full py-2"></div>
                         </div>
                        </div>
-                      
                     </div>
                 </section>
             </main>
