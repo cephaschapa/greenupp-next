@@ -26,7 +26,7 @@ export default function Home() {
             </div>
             <div className="grid grid-cols-1 md:grid-cols-2 md:justify lg:grid-cols-3 py-10">
                 <MainCard image="/svg/cloud-1.svg" title="Realtime Data Capture" subtext="Capture reatime data from IoT devices."/>
-                <MainCard image="/svg/grow-1.svg" title="AI  Powered Precision Agriculture" subtext="Automate, visualize and make data driven decisions."/>
+                <MainCard image="/svg/grow-1.svg" title="AI Powered Precision Agriculture" subtext="Automate, visualize and make data driven decisions."/>
                 <MainCard image="/svg/book.svg" title="Actionable Data Analytics" subtext="Use the data to predict and anticipate future events."/>
                 <MainCard image="/svg/drop.svg" title="Blockchain & Supply Chain Monitoring" subtext="Monitor key information, recursively backtrace problem root causes and facilitate provenance in your supply chain."/>
                 <MainCard image="/svg/map-1.svg" title="GPS & Field Mapping" subtext="Use our Geo-mapping and GPS powered technology to map your entire field."/>
