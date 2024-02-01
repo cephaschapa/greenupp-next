@@ -13,7 +13,7 @@ function theproblem() {
             </Head>
             {/* Header */}
             <Header />
-            {/* Banner */}
+          
             <Banner2 />
             {/* Main */}
             <main className="p-2 h-auto">
