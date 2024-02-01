@@ -7,7 +7,7 @@ function Solution(arr) {
 
     let z = 1;
     function x(arr) {
-        return arr.reduce((sum, n) => sum + n, 0);
+        return arr.reduce((sum, n) =>  sum + n, 0);
     }
     
 
