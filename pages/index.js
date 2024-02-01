@@ -11,7 +11,7 @@ export default function Home() {
   return (
     <div>
       <Head>
-        <title>Greenupp | AI Precision Agriculture, Blockchain, Realtime Analytics, Realtime Communication</title>
+        <title>Greenupp | AI Precision Agriculture, Blockchain, Realtime Analysis, Realtime Communication</title>
         <meta name="description" content="A product of Orion" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
