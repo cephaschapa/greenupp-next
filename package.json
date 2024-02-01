@@ -18,7 +18,9 @@
     "react-acrylic": "^0.1.1",
     "react-dom": "17.0.2",
     "react-splash": "^0.1.0",
-    "tailwindcss-filters": "^3.0.0"
+    "tailwindcss-filters": "^3.0.0",
+    "jest": "^29.7.0",
+    "jest-environment-jsdom": "^29.7.0"
   },
   "devDependencies": {
     "autoprefixer": "^10.3.3",
